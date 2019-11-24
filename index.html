@@ -1,0 +1,558 @@
+<head>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+	<link href="https://fonts.googleapis.com/css?family=Oswald|Quattrocento" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<title>Home</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+    <meta name="author" content="Renald Hicap">
+    <meta name="description" content="We would like to use your location and cookies to push outage notifications and Meralco-related advisories. Read our Privacy Policy. Ok ...">
+    <meta name="keyword" content="Meralco,Meralco PH,Meralco Online">
+	<style type="text/css">
+	body{
+		margin: 0;
+		background-color:#ffffff;
+	}
+	header{
+		padding: 20px 0 20px 0;
+		width: 100%;
+		margin: 5px 0 0 0;
+	}
+	a{
+		text-decoration: none;
+	}
+	.container1{
+		width: 90%;
+		margin: 0 auto;
+	}
+	.header1 , .header2, .header3{
+		border-bottom: 5px solid;
+		border-color: #fb6f17;
+		background-color: #ffffff;
+		height: 120px;
+
+	}
+	.header1, .header3{
+		width: 30%;	
+	}
+	.header1{
+		float: left;
+		border-top-left-radius: 5px;
+	}
+	.header2{
+		float: left;
+		width: 40%;
+	}
+	.header3{
+		float:right;
+		border-top-right-radius: 5px;
+	}
+	.Logo{
+		margin: 20px 0 0 150px;
+		height: 70%;
+		width: 20%;
+	}
+	.header2 ul li{
+		display:inline-block;
+		font-size: 25px;
+	}
+	.header2 li, .header3 li{
+		margin: 0 0 0 2%;
+	}
+	.header2 ul{
+		margin: 7% 0 0 5%;
+	}
+	.header2 a,.header3 a,nav a{
+		color: #1e1e1e;
+	}
+	.header2 a:hover,.header3 a:hover, nav a:hover {
+		color: #fb6f17;
+		text-decoration: none;
+	}
+	.header3 ul li{
+		display:inline-block;
+		font-size: 20px;
+	}
+	.header3 ul{
+		margin: 8% 0 0 5%;
+	}
+	.header3 a{
+		font-size: 35px;
+	}
+	nav{
+		background-color: #ffffff;
+		width: 100%;
+		height: 60px;
+		padding: 5px 0 5px 0;
+		margin: 20px 0 0 0;
+	}
+	nav ul{
+		display: flex;
+		justify-content: center;
+	}
+	nav ul li{
+		display: inline-block;
+		font-size: 25px;
+		margin: 0 50px 0 0;
+	}
+	.WholeBody{
+		width: 100%;
+		margin: 20px 0 0 0;
+	}
+	.BodyLeft, .BodyRight{
+		background-color: #ffffff;
+	
+	}
+	.BodyLeft{
+		float: left;
+		width: 60%;
+		height: 450px;
+	}
+	.BodyRight{
+		width: 40%;
+		float: right;
+		height: 450px;
+	}
+	.carousel-inner img{
+		height: 100%;
+	}
+	.carousel-indicators .active{
+    background-color: #111;
+	}
+	.carousel-indicators li{
+    background-color: #585858;
+	}
+	.BodyRight1{
+		padding : 20px 0 0 20px;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+	}
+	.BodyRight2{
+		width: 100%;
+	}
+	form{
+		width: 100%;
+	}
+	form .FormLogin{
+		margin: 0 0 0 10%;
+		padding : 20px 0 0 0;
+	}
+	form .Email, form .Password{
+		margin: 0 0 20px 12%;
+		width: 80%;
+		height: 40px;
+		color: #333;
+		background-color: #f5f5f5;
+		border: 1px solid #8f8f8f;
+		border-radius: .25rem;
+		transition: border .1s linear,background-color .1s linear;
+		display: inline-block;
+		padding: 0 1rem 0 .75rem;
+	}
+	form .FormCheckBox{
+		margin: 0 0 20px 12%;
+
+
+	}
+	form .LoginButton{
+	    width: 80%;
+		background: #ff5114;
+		color: #fff;
+		height: 54px;
+		border: 2px solid #ff5114;
+		border-radius: 30px;
+		padding: 10px;
+		margin: 0 0 20px 12%;
+	}
+	form .LoginButton:hover{
+		border: none;
+		transition: 0.5s;
+	}
+	.ForgotPass ul li{
+		display: inline-block;
+		margin: 0 0 0 20px;
+	}
+	.ForgotPass a{
+		text-decoration: none;
+		color: #1e1e1e;
+	}
+	.ForgotPass a:hover{
+		color: #fb6f17;
+	}
+	.articles{
+		margin: 20px 0 0 0;
+		width: 100%;
+	}
+	.articles a{
+		color: #fff;
+	}
+	.articles a:hover{
+		color: #ff4400;
+	}
+	.articles1{
+		background-image: url(https://meralcomain.s3.ap-southeast-1.amazonaws.com/images/product_service_program/2017-11/mobile-power-ideas-landing.jpg);
+		background-repeat: no-repeat;
+		background-size: 100% 300px;
+		width: 30%;
+		height: 300px;
+		float:left;
+		margin: 0 6% 0 0;
+	}
+	.articles1 .content1, .articles1 .content2,.articles1 .content3,.articles2 .content1,.articles2 .content2,.articles3 .content1, .articles3 .content2{
+		margin: 0 0 0 5%; 
+	}
+	.articles1 .content1{
+		margin-top: 35%;
+	}
+	.articles2{
+		background-image: url(https://meralcomain.s3.ap-southeast-1.amazonaws.com/default_images/video-thumb.jpg);
+		background-repeat: no-repeat;
+		background-size: 100% 300px;
+		float:left;
+		width: 29%;
+		height: 300px;
+		margin: 0 6% 0 0;
+		
+	}
+	.articles2 .content1{
+		margin-top: 40%;
+	}
+	.articles3{
+		background-image: url(https://meralcomain.s3.ap-southeast-1.amazonaws.com/images/article/2019-06/dsc_0025_1_2.jpg?null);
+		float: left;
+		background-repeat: no-repeat;
+		background-size: 100% 300px;
+		width: 29%;
+		height: 300px;
+	}
+	.articles3 .content1{
+		margin-top: 40%;
+	}
+	.articles4{
+		background-image: url(https://meralcomain.s3.ap-southeast-1.amazonaws.com/images/basic_page/2017-10/maintenance-sched-banner_0.jpg);
+		float: left;
+		background-repeat: no-repeat;
+		background-size: 100% 300px;
+		width: 30%;
+		height: 300px;
+		margin: 0 6% 0 0;
+	}
+	.articles4 .Content1, .articles4 .Content2 ,.articles5 .Content1, .articles5 .Content2, .articles5 .Content3,.articles6 .Content1, .articles6 .Content2{
+		margin: 0 0 0 5%;
+	}
+	.articles4 .content1{
+		margin-top: 45%;
+	}
+	.articles5{
+		background-image: url(https://meralcomain.s3.ap-southeast-1.amazonaws.com/images/basic_page/2018-10/start-or-modify-thumb-v2.jpg);
+		float: left;
+		background-repeat: no-repeat;
+		background-size: 100% 300px;
+		width: 29%;
+		height: 300px;
+		margin: 0 6% 0 0;
+	}
+	.articles5 .Content1{
+		margin-top: 30%;
+	}
+	.articles6{
+		background-image: url(https://meralcomain.s3.ap-southeast-1.amazonaws.com/images/article/2018-06/saffron-thumb.jpg);
+		float: left;
+		background-repeat: no-repeat;
+		background-size: 100% 300px;
+		width: 29%;
+		height: 300px;
+	}
+	.articles6 .Content1{
+		margin-top: 40%;
+	}
+	.footer{
+		width: 100%;
+		margin: 20px 0 0 0;
+		color: #fff;
+	}
+	.footer1{
+		width:35%;
+		height: 150px;
+		background-color: #000;
+		float:left;
+	}
+	.footer2{
+		width:35%;
+		height: 150px;
+		background-color: #000;
+		float:left;
+	}
+	.footer3{
+		width:30%;
+		height: 150px;
+		background-color: #000;
+		float:right;
+	}
+	.footer1 ul li{
+		display: block;
+		margin: 0 0 3% 0;
+	}
+	.footer1 ul{
+		margin: 10% 0 0 10%;
+	}
+	.footer2 ul li{
+		display: block;
+		margin: 5px 0 3% 0;
+
+	}
+	.footer2 ul{
+		margin: 3% 0 0 10%;
+	}
+	.footer a{
+		color: #fff;
+		text-decoration:none;
+	}
+	.footer a:hover{
+		color: #ff4400;
+	}
+	.footer3 img{
+		margin: 10% 0 0 75%;
+	}
+	.footer4 {
+		width: 100%;
+		background-color: #000;
+		border-top: 2px solid #444;
+		height: 60px;
+		padding : 10px 0 10px 0;
+	}
+	.footer4 ul li{
+		display: inline-block;
+		margin: 5px 30px 0 0;
+	}
+	.footer4 ul{
+		display:flex;
+		justify-content:center;
+	}
+	</style>
+</head>
+<body>
+	<div class="container1">
+		<header>
+		
+			<div class="header1">
+					
+				<a href="#"><img class="Logo"src="data:image/webp;base64,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" alt="Image Could Not Load" 
+				data-pagespeed-url-hash="603492908" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"> </a>
+			
+				</div>
+			<div class="header2">
+					<ul>
+						<li><a href="#">For Homes</a></li>
+						<li><a href="#">For Businesses</a></li>
+						<li><a href="#">Support</a></li>
+					</ul>
+			</div>
+			<div class="header3">
+				<ul>
+					<li>Follow Us!</li>
+					<li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+					<li><a href="#"><i class="fab fa-youtube-square"></i></a></li>
+					<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+					<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+				</ul>
+			</div>
+		</header>
+	</div>
+	
+	<div style="clear:both">
+	</div>
+
+	<div class="container1">
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="Services.html">Services & Solutions</a></li>
+				<li><a href="Contect.html">Contact</a></li>
+				<li><a href="#">Careers</a></li>
+				<li><a href="about.html">About Meralco</a></li>
+				<li><a href="#">News & Advisories</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div style="clear:both">
+	</div>
+	<div class="container1">
+		<div class="WholeBody">
+			<div class="BodyLeft">
+				<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+				  <ol class="carousel-indicators">
+					<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+					<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+					<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+					<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+				  </ol>
+				  <div class="carousel-inner">
+					<div class="carousel-item active">
+					  <img class="d-block w-100" src="https://meralcomain.s3.ap-southeast-1.amazonaws.com/images/carousel/2018-10/fam-1-1440x520-semi-clean-v5.jpg" alt="First slide">
+					</div>
+					<div class="carousel-item">
+					  <img class="d-block w-100" src="https://meralcomain.s3.ap-southeast-1.amazonaws.com/images/carousel/2019-07/1200mw_green_0.png?null" alt="Third slide">
+					</div>
+					<div class="carousel-item">
+					  <img class="d-block w-100" src="https://meralcomain.s3.ap-southeast-1.amazonaws.com/images/carousel/2019-07/1200mw_green_2019.jpg?null" alt="Second slide">
+					</div>
+					<div class="carousel-item">
+					  <img class="d-block w-100" src="https://meralcomain.s3.ap-southeast-1.amazonaws.com/images/carousel/2019-07/500mw_net.png?null" alt="Second slide">
+					</div>
+				  </div>
+				  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				  </a>
+				  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				  </a>
+				</div>
+			</div>
+			<div class="BodyRight">
+				<div class="BodyRight1">
+					<h1> Welcome to Meralco Online </h1>
+				</div>
+				<div class"BodyRight2">
+					<form>
+						<div class="FormLogin">
+							<h3>Log In </h3>
+						</div>
+						<div class="FormEmail">
+							<input type="text" name="email" placeholder="Email" class="Email" >
+						</div>
+						<div class="FormPassword">
+							<input type="password" name="password" placeholder="Password" class="Password">
+						</div>
+						<div class="FormCheckBox">
+							<input type="checkbox" name="Remember User" value="Remember User"> Remember Me 
+						</div>
+						<button class="LoginButton" type="Button">
+							Login
+						</button>
+
+					</form>
+					<div class="ForgotPass">
+						<ul>
+							<li><a href="#">Forgot Password?</a></li>
+							<li><a href="#">Register Here</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div style="clear:both">
+	</div>
+	<div class="container1">
+		<div class="articles">
+			<a href="#">
+			<div class="articles1 overlay ">
+					<h4 class="Content1">Meralco Corporate Partners</h4>
+					<h2 class="Content2">Power Ideas </h2>
+					<p class="Content3">Power Ideas is a program designed by the meralco <br>
+					Corporate Partners, in collaboration with various <br>
+					Meralco subsidiary companies, to provide</p>
+			</div>
+			</a>
+			<a href="#">
+			<div class="articles2 overlay">
+					<h4 class="Content1">Company</h4>
+					<h2 class="Content2">Meralco Advisory - <br> September 2019</h2>
+			</div>
+			</a>
+			<a href="#">
+			<div class="articles3 overlay">
+					<h4 class="Content1">Company</h4>
+					<h2 class="Content2">Meralco to Invest In <br> 1,000MW Green Energy</h2>
+			</div>
+			</a>
+		</div>
+	</div>
+	<div style="clear:both">
+	</div>
+	<div class="container1">
+		<div class="articles">
+			<a href="#">
+			<div class="articles4 overlay ">
+					<h4 class="Content1">Company</h4>
+					<h2 class="Content2">Maintenance Schedule </h2>
+			</div>
+			</a>
+			<a href="#">
+			<div class="articles5 overlay">
+					<h4 class="Content1">Homes</h4>
+					<h2 class="Content2">Start or Modify <br> Service</h2>
+					<p class="Content3">Here's a quick guide on how you can apply for <br>
+					a new electric service connection.</p>
+			</div>
+			</a>
+			<a href="#">
+			<div class="articles6 overlay">
+					<h4 class="Content1">Meralco Corporate Partners</h4>
+					<h2 class="Content2">Saffron Philippines <br> leads local industry</h2>
+			</div>
+			</a>
+		</div>
+	</div>
+	<div style="clear:both">
+	</div>
+	<div class="container1">
+		<div class="footer">
+			<div class="footer1">
+				<ul>
+					<li><a href="#">Find a Store</a></li>
+					<li><a href="#">Make Store appointment</a></li>
+					<li><a href="#">Coverage maps</a></li>
+				</ul>
+			</div>
+			<div class="footer2">
+				<ul>Explore Meralco
+					<li><a href="#">For Homes</a></li>
+					<li><a href="#">For Biz Partners</a></li>
+					<li><a href="#">For Corporate PArtners</a></li>
+				</ul>
+			</div>
+			<div class="footer3">
+				<a href="#"><img alt="Meralco Logo" data-entity-type="file" data-entity-uuid="b030e73f-da16-44b7-95d3-f82fb1f01fbd" src="https://meralcomain.s3.ap-southeast-1.amazonaws.com/images/ckeditor-images/logo-white_0.png"></a>
+			</div>
+			<div style="clear:both">
+			</div>
+			<div class="footer4">
+				<ul>
+					<li>@ Meralco 2019 Intellectual Property. All rights reserved.</li>
+					<li><a href="PrivacyPolicy.html">Privacy Policy</a></li>
+					<li><a href="FAQ.html">FAQ</a></li>
+					<li><a href="Review.html">Community Reviews</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

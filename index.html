@@ -5,6 +5,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css "href="home1.css">
 	<title>Home</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="utf-8">
@@ -12,7 +13,9 @@
     <meta name="description" content="We would like to use your location and cookies to push outage notifications and Meralco-related advisories. Read our Privacy Policy. Ok ...">
     <meta name="keyword" content="Meralco,Meralco PH,Meralco Online">
 	<style type="text/css">
-	body{
+	 @media screen and (min-width: 1280px){ 
+       
+        body{
 		margin: 0;
 		background-color:#ffffff;
 	}
@@ -194,6 +197,16 @@
 	.articles a:hover{
 		color: #ff4400;
 	}
+	.articles8{
+		margin: 20px 0 0 0;
+		width: 100%;
+	}
+	.articles8 a{
+		color: #fff;
+	}
+	.articles8 a:hover{
+		color: #ff4400;
+	}
 	.articles1{
 		background-image: url(https://meralcomain.s3.ap-southeast-1.amazonaws.com/images/product_service_program/2017-11/mobile-power-ideas-landing.jpg);
 		background-repeat: no-repeat;
@@ -340,6 +353,1076 @@
 	li, input{
 		font-family: Quattrocento;
 	}
+            }
+	@media screen and (max-width: 480px){
+	
+	body{
+		margin: 0;
+		background-color:#ffffff;
+	}
+	header{
+		padding: 20px 0 20px 0;
+		width: 100%;
+		margin: 5px 0 0 0;
+	}
+	a{
+		text-decoration: none;
+	}
+	.container1{
+		width: 90%;
+		margin: 0 auto;
+	}
+	.header1 , .header2, .header3{
+		border-bottom: 5px solid;
+		border-color: #fb6f17;
+		background-color: #ffffff;
+		height: 120px;
+
+	}
+	.header1{
+		width: 20%;	
+	}
+	.header1{
+		float: left;
+		border-top-left-radius: 5px;
+	}
+	.header2{
+		float: left;
+		width: 55%;
+	}
+	.header3{
+		float:right;
+		border-top-right-radius: 5px;
+		width: 25%;
+	}
+	.Logo{
+		margin: 20px 0 0 30%;
+		height: 60%;
+		width: 70%;
+	}
+	.header2 ul li{
+		display:inline-block;
+		font-size: 15px;
+	}
+	.header2 li, .header3 li{
+		margin: 0 0 0 2px;
+	}
+	.header2 ul{
+		margin: 15% 0 0 0;
+	}
+	.header2 a,.header3 a,nav a{
+		color: #1e1e1e;
+		font-family: Oswald;
+	}
+	.header2 a:hover,.header3 a:hover, nav a:hover {
+		color: #fb6f17;
+		text-decoration: none;
+	}
+	.header3 ul li{
+		display:inline-block;
+		font-size: 14px;
+	}
+	.header3 ul{
+		margin: 15% 0 0 0;
+	}
+	.header3 a{
+		font-size: 20px;
+		margin: 0 0 0 50%;
+	}
+	nav{
+		background-color: #ffffff;
+		width: 100%;
+		height: 60px;
+		padding: 5px 0 0 0;
+		margin: 10px 0 0 0;
+	}
+	nav ul{
+		display: flex;
+		justify-content: center;
+	}
+	nav ul li{
+		display: inline-block;
+		margin: 0 15px 0 0;
+		font-size: 11px;
+	}
+	.WholeBody{
+		width: 100%;
+		margin: 5px 0 0 0;
+	}
+	.BodyLeft, .BodyRight{
+		background-color: #ffffff;
+	
+	}
+	.BodyLeft{
+		float: left;
+		width: 100%;
+		height: 200px;
+	}
+	.BodyRight{
+		width: 100%;
+		float: right;
+		height: 300px;
+	}
+	.carousel-inner img{
+		height: 100%;
+	}
+	.carousel-indicators .active{
+    background-color: #111;
+	}
+	.carousel-indicators li{
+    background-color: #585858;
+	}
+	.BodyRight1{
+		padding : 10px 0 0 20px;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+	}
+	.BodyRight2{
+		width: 100%;
+	}
+	form{
+		width: 100%;
+	}
+	form .FormLogin{
+		margin: 0 0 0 10%;
+		padding : 10px 0 0 0;
+	}
+	form .Email, form .Password{
+		margin: 0 0 15px 12%;
+		width: 80%;
+		height: 30px;
+		color: #333;
+		background-color: #f5f5f5;
+		border: 1px solid #8f8f8f;
+		border-radius: .25rem;
+		transition: border .1s linear,background-color .1s linear;
+		display: inline-block;
+		padding: 0 1rem 0 .75rem;
+	}
+	form .FormCheckBox{
+		margin: 0 0 10px 12%;
+
+
+	}
+	form .LoginButton{
+	    width: 80%;
+		background: #ff5114;
+		color: #fff;
+		height: 50px;
+		border: 2px solid #ff5114;
+		border-radius: 30px;
+		padding: 10px;
+		margin: 0 0 5px 12%;
+	}
+	form .LoginButton:hover{
+		border: none;
+		transition: 0.5s;
+	}
+	.ForgotPass ul li{
+		display: inline-block;
+		margin: 0 0 0 5px;
+		font-size: 15px;
+	}
+	.ForgotPass a{
+		text-decoration: none;
+		color: #1e1e1e;
+	}
+	.ForgotPass a:hover{
+		color: #fb6f17;
+	}
+	.articles{
+		margin: 20px 0 0 0;
+		width: 100%;
+	}
+	.articles a{
+		color: #fff;
+	}
+	.articles a:hover{
+		color: #ff4400;
+	}
+	.articles8 a{
+		color: #fff;
+	}
+	.articles8 a:hover{
+		color: #ff4400;
+	}
+	.articles1{
+		background-image: url(https://meralcomain.s3.ap-southeast-1.amazonaws.com/images/product_service_program/2017-11/mobile-power-ideas-landing.jpg);
+		background-repeat: no-repeat;
+		background-size: 100% 300px;
+		width: 100%;
+		height: 250px;
+		float:left;
+		margin: 0 0 10px 0;
+	}
+	.articles1 .content1, .articles1 .content2,.articles1 .content3,.articles2 .content1,.articles2 .content2,.articles3 .content1, .articles3 .content2{
+		margin: 0 0 0 5%; 
+	}
+	.articles1 .content1{
+		margin-top: 35%;
+	}
+	.articles2{
+		background-image: url(https://meralcomain.s3.ap-southeast-1.amazonaws.com/default_images/video-thumb.jpg);
+		background-repeat: no-repeat;
+		background-size: 100% 300px;
+		float:left;
+		width: 100%;
+		height: 250px;
+		margin: 0 0 10px 0;
+		
+	}
+	.articles2 .content1{
+		margin-top: 40%;
+	}
+	.articles8{
+		margin-top: 10px;
+	}
+	.articles3{
+		background-image: url(https://meralcomain.s3.ap-southeast-1.amazonaws.com/images/article/2019-06/dsc_0025_1_2.jpg?null);
+		float: left;
+		background-repeat: no-repeat;
+		background-size: 100% 300px;
+		width: 100%;
+		height: 250px;
+		margin: 0 0 0 0;
+	}
+	.articles3 .content1{
+		margin-top: 40%;
+	}
+	.articles4{
+		background-image: url(https://meralcomain.s3.ap-southeast-1.amazonaws.com/images/basic_page/2017-10/maintenance-sched-banner_0.jpg);
+		float: left;
+		background-repeat: no-repeat;
+		background-size: 100% 300px;
+		width: 100%;
+		height: 250px;
+		margin: 0 0 10px 0;
+	}
+	.articles4 .Content1, .articles4 .Content2 ,.articles5 .Content1, .articles5 .Content2, .articles5 .Content3,.articles6 .Content1, .articles6 .Content2{
+		margin: 0 0 0 5%;
+	}
+	.articles4 .content1{
+		margin-top: 45%;
+	}
+	.articles5{
+		background-image: url(https://meralcomain.s3.ap-southeast-1.amazonaws.com/images/basic_page/2018-10/start-or-modify-thumb-v2.jpg);
+		float: left;
+		background-repeat: no-repeat;
+		background-size: 100% 300px;
+		width: 100%;
+		height: 250px;
+		margin: 0 0 10px 0;
+	}
+	.articles5 .Content1{
+		margin-top: 30%;
+	}
+	.articles6{
+		background-image: url(https://meralcomain.s3.ap-southeast-1.amazonaws.com/images/article/2018-06/saffron-thumb.jpg);
+		float: left;
+		background-repeat: no-repeat;
+		background-size: 100% 300px;
+		width: 100%;
+		height: 250px;
+		margin: 0 0 0 0;
+	}
+	.articles6 .Content1{
+		margin-top: 40%;
+	}
+	.footer{
+		width: 100%;
+		margin: 10px 0 0 0;
+		color: #fff;
+	}
+	.footer1{
+		width:35%;
+		height: 100px;
+		background-color: #000;
+		float:left;
+	}
+	.footer2{
+		width:35%;
+		height: 100px;
+		background-color: #000;
+		float:left;
+	}
+	.footer3{
+		width:30%;
+		height: 100px;
+		background-color: #000;
+		float:right;
+	}
+	.footer1 ul li{
+		display: block;
+		margin: 0 0 3% 0;
+		font-size: 10px;
+	}
+	.footer1 ul{
+		margin: 10% 0 0 10%;
+	}
+	.footer2 ul li{
+		display: block;
+		margin: 5px 0 3% 0;
+		font-size: 10px;
+
+	}
+	.footer2 ul{
+		margin: 3% 0 0 10%;
+		font-size: 13
+	}
+	.footer a{
+		color: #fff;
+		text-decoration:none;
+	}
+	.footer a:hover{
+		color: #ff4400;
+	}
+	.footer3 img{
+		margin: 10% 0 0 30%;
+	}
+	.footer4 {
+		width: 100%;
+		background-color: #000;
+		border-top: 2px solid #444;
+		height: 100px;
+		padding : 10px 0 0 0;
+	}
+	.footer4 ul li{
+		display: inline-block;
+		margin: 30px 10px 0 0;
+		font-size: 8px;
+	}
+	.footer4 ul{
+		display:flex;
+		justify-content:center;
+	}
+	h1, h3 ,h4{
+		font-family: Oswald;
+	}
+	li, input{
+		font-family: Quattrocento;
+	}
+
+	h1{
+		font-size: 25px;
+	}
+	h3{
+		font-size: 18px;
+	}
+	h2{
+		font-size: 20px;
+	}
+	h4{
+		font-size: 15px;
+	}
+	p{
+		font-size: 13px;
+	}
+	}
+	@media screen and (max-width: 1279px) and (min-width: 769px)  { 
+		body{
+		margin: 0;
+		background-color:#ffffff;
+	}
+	header{
+		padding: 20px 0 20px 0;
+		width: 100%;
+		margin: 5px 0 0 0;
+	}
+	a{
+		text-decoration: none;
+	}
+	.container1{
+		width: 90%;
+		margin: 0 auto;
+	}
+	.header1 , .header2, .header3{
+		border-bottom: 5px solid;
+		border-color: #fb6f17;
+		background-color: #ffffff;
+		height: 120px;
+
+	}
+	.header1, .header3{
+		width: 30%;	
+	}
+	.header1{
+		float: left;
+		border-top-left-radius: 5px;
+	}
+	.header2{
+		float: left;
+		width: 40%;
+	}
+	.header3{
+		float:right;
+		border-top-right-radius: 5px;
+	}
+	.Logo{
+		margin: 20px 0 0 150px;
+		height: 70%;
+		width: 20%;
+	}
+	.header2 ul li{
+		display:inline-block;
+		font-size: 20px;
+	}
+	.header2 li, .header3 li{
+		margin: 0 0 0 2%;
+	}
+	.header2 ul{
+		margin: 5 0 0 5%;
+	}
+	.header2 a,.header3 a,nav a{
+		color: #1e1e1e;
+		font-family: Oswald;
+	}
+	.header2 a:hover,.header3 a:hover, nav a:hover {
+		color: #fb6f17;
+		text-decoration: none;
+	}
+	.header3 ul li{
+		display:inline-block;
+		font-size: 20px;
+	}
+	.header3 ul{
+		margin: 8% 0 0 5%;
+	}
+	.header3 a{
+		font-size: 35px;
+	}
+	nav{
+		background-color: #ffffff;
+		width: 100%;
+		height: 60px;
+		padding: 5px 0 5px 0;
+		margin: 20px 0 0 0;
+	}
+	nav ul{
+		display: flex;
+		justify-content: center;
+	}
+	nav ul li{
+		display: inline-block;
+		font-size: 25px;
+		margin: 0 50px 0 0;
+	}
+	.WholeBody{
+		width: 100%;
+		margin: 20px 0 0 0;
+	}
+	.BodyLeft, .BodyRight{
+		background-color: #ffffff;
+	
+	}
+	.BodyLeft{
+		float: left;
+		width: 60%;
+		height: 450px;
+	}
+	.BodyRight{
+		width: 40%;
+		float: right;
+		height: 450px;
+	}
+	.carousel-inner img{
+		height: 100%;
+	}
+	.carousel-indicators .active{
+    background-color: #111;
+	}
+	.carousel-indicators li{
+    background-color: #585858;
+	}
+	.BodyRight1{
+		padding : 20px 0 0 20px;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+	}
+	.BodyRight2{
+		width: 100%;
+	}
+	form{
+		width: 100%;
+	}
+	form .FormLogin{
+		margin: 0 0 0 10%;
+		padding : 20px 0 0 0;
+	}
+	form .Email, form .Password{
+		margin: 0 0 20px 12%;
+		width: 80%;
+		height: 40px;
+		color: #333;
+		background-color: #f5f5f5;
+		border: 1px solid #8f8f8f;
+		border-radius: .25rem;
+		transition: border .1s linear,background-color .1s linear;
+		display: inline-block;
+		padding: 0 1rem 0 .75rem;
+	}
+	form .FormCheckBox{
+		margin: 0 0 20px 12%;
+
+
+	}
+	form .LoginButton{
+	    width: 80%;
+		background: #ff5114;
+		color: #fff;
+		height: 54px;
+		border: 2px solid #ff5114;
+		border-radius: 30px;
+		padding: 10px;
+		margin: 0 0 20px 12%;
+	}
+	form .LoginButton:hover{
+		border: none;
+		transition: 0.5s;
+	}
+	.ForgotPass ul li{
+		display: inline-block;
+		margin: 0 0 0 20px;
+	}
+	.ForgotPass a{
+		text-decoration: none;
+		color: #1e1e1e;
+	}
+	.ForgotPass a:hover{
+		color: #fb6f17;
+	}
+	.articles{
+		margin: 20px 0 0 0;
+		width: 100%;
+	}
+	.articles a{
+		color: #fff;
+	}
+	.articles a:hover{
+		color: #ff4400;
+	}
+	.articles8{
+		margin: 20px 0 0 0;
+		width: 100%;
+	}
+	.articles8 a{
+		color: #fff;
+	}
+	.articles8 a:hover{
+		color: #ff4400;
+	}
+	.articles1{
+		background-image: url(https://meralcomain.s3.ap-southeast-1.amazonaws.com/images/product_service_program/2017-11/mobile-power-ideas-landing.jpg);
+		background-repeat: no-repeat;
+		background-size: 100% 300px;
+		width: 30%;
+		height: 300px;
+		float:left;
+		margin: 0 6% 0 0;
+	}
+	.articles1 .content1, .articles1 .content2,.articles1 .content3,.articles2 .content1,.articles2 .content2,.articles3 .content1, .articles3 .content2{
+		margin: 0 0 0 5%; 
+	}
+	.articles1 .content1{
+		margin-top: 35%;
+	}
+	.articles2{
+		background-image: url(https://meralcomain.s3.ap-southeast-1.amazonaws.com/default_images/video-thumb.jpg);
+		background-repeat: no-repeat;
+		background-size: 100% 300px;
+		float:left;
+		width: 29%;
+		height: 300px;
+		margin: 0 6% 0 0;
+		
+	}
+	.articles2 .content1{
+		margin-top: 40%;
+	}
+	.articles3{
+		background-image: url(https://meralcomain.s3.ap-southeast-1.amazonaws.com/images/article/2019-06/dsc_0025_1_2.jpg?null);
+		float: left;
+		background-repeat: no-repeat;
+		background-size: 100% 300px;
+		width: 29%;
+		height: 300px;
+	}
+	.articles3 .content1{
+		margin-top: 40%;
+	}
+	.articles4{
+		background-image: url(https://meralcomain.s3.ap-southeast-1.amazonaws.com/images/basic_page/2017-10/maintenance-sched-banner_0.jpg);
+		float: left;
+		background-repeat: no-repeat;
+		background-size: 100% 300px;
+		width: 30%;
+		height: 300px;
+		margin: 0 6% 0 0;
+	}
+	.articles4 .Content1, .articles4 .Content2 ,.articles5 .Content1, .articles5 .Content2, .articles5 .Content3,.articles6 .Content1, .articles6 .Content2{
+		margin: 0 0 0 5%;
+	}
+	.articles4 .content1{
+		margin-top: 45%;
+	}
+	.articles5{
+		background-image: url(https://meralcomain.s3.ap-southeast-1.amazonaws.com/images/basic_page/2018-10/start-or-modify-thumb-v2.jpg);
+		float: left;
+		background-repeat: no-repeat;
+		background-size: 100% 300px;
+		width: 29%;
+		height: 300px;
+		margin: 0 6% 0 0;
+	}
+	.articles5 .Content1{
+		margin-top: 30%;
+	}
+	.articles6{
+		background-image: url(https://meralcomain.s3.ap-southeast-1.amazonaws.com/images/article/2018-06/saffron-thumb.jpg);
+		float: left;
+		background-repeat: no-repeat;
+		background-size: 100% 300px;
+		width: 29%;
+		height: 300px;
+	}
+	.articles6 .Content1{
+		margin-top: 40%;
+	}
+	.footer{
+		width: 100%;
+		margin: 20px 0 0 0;
+		color: #fff;
+	}
+	.footer1{
+		width:35%;
+		height: 150px;
+		background-color: #000;
+		float:left;
+	}
+	.footer2{
+		width:35%;
+		height: 150px;
+		background-color: #000;
+		float:left;
+	}
+	.footer3{
+		width:30%;
+		height: 150px;
+		background-color: #000;
+		float:right;
+	}
+	.footer1 ul li{
+		display: block;
+		margin: 0 0 3% 0;
+	}
+	.footer1 ul{
+		margin: 10% 0 0 10%;
+	}
+	.footer2 ul li{
+		display: block;
+		margin: 5px 0 3% 0;
+
+	}
+	.footer2 ul{
+		margin: 3% 0 0 10%;
+	}
+	.footer a{
+		color: #fff;
+		text-decoration:none;
+	}
+	.footer a:hover{
+		color: #ff4400;
+	}
+	.footer3 img{
+		margin: 10% 0 0 75%;
+	}
+	.footer4 {
+		width: 100%;
+		background-color: #000;
+		border-top: 2px solid #444;
+		height: 60px;
+		padding : 10px 0 10px 0;
+	}
+	.footer4 ul li{
+		display: inline-block;
+		margin: 5px 30px 0 0;
+	}
+	.footer4 ul{
+		display:flex;
+		justify-content:center;
+	}
+	h1, h3 ,h4{
+		font-family: Oswald;
+	}
+	li, input{
+		font-family: Quattrocento;
+	}
+	p{
+		font-size: 13px;
+	}
+	}
+    @media screen and (max-width: 768px) and (min-width: 481px)  { 
+          body{
+		margin: 0;
+		background-color:#ffffff;
+	}
+	header{
+		padding: 20px 0 20px 0;
+		width: 100%;
+		margin: 5px 0 0 0;
+	}
+	a{
+		text-decoration: none;
+	}
+	.container1{
+		width: 90%;
+		margin: 0 auto;
+	}
+	.header1 , .header2, .header3{
+		border-bottom: 5px solid;
+		border-color: #fb6f17;
+		background-color: #ffffff;
+		height: 120px;
+
+	}
+	.header1, .header3{
+		width: 25%;	
+	}
+	.header1{
+		float: left;
+		border-top-left-radius: 5px;
+	}
+	.header2{
+		float: left;
+		width: 50%;
+	}
+	.header3{
+		float:right;
+		border-top-right-radius: 5px;
+		width: 25%;
+	}
+	.Logo{
+		margin: 20px 0 0 45%;
+		height: 70%;
+		width: 40%;
+	}
+	.header2 ul li{
+		display:inline-block;
+		font-size: 22px;
+	}
+	.header2 li, .header3 li{
+		margin: 0 0 0 2%;
+	}
+	.header2 ul{
+		margin: 10% 0 0 0;
+	}
+	.header2 a,.header3 a,nav a{
+		color: #1e1e1e;
+		font-family: Oswald;
+	}
+	.header2 a:hover,.header3 a:hover, nav a:hover {
+		color: #fb6f17;
+		text-decoration: none;
+	}
+	.header3 ul li{
+		display:inline-block;
+		font-size: 25px;
+	}
+	.header3 ul{
+		margin: 3% 0 0 0;
+	}
+	.header3 a{
+		font-size: 30px;
+	}
+	nav{
+		background-color: #ffffff;
+		width: 100%;
+		height: 60px;
+		padding: 5px 0 5px 0;
+		margin: 20px 0 0 0;
+	}
+	nav ul{
+		display: flex;
+		justify-content: center;
+	}
+	nav ul li{
+		display: inline-block;
+		font-size: 25px;
+		margin: 0 15px 0 0;
+		font-size: 20px;
+	}
+	.WholeBody{
+		width: 100%;
+		margin: 20px 0 0 0;
+	}
+	.BodyLeft, .BodyRight{
+		background-color: #ffffff;
+	
+	}
+	.BodyLeft{
+		float: left;
+		width: 60%;
+		height: 300px;
+	}
+	.BodyRight{
+		width: 40%;
+		float: right;
+		height: 300px;
+	}
+	.carousel-inner img{
+		height: 100%;
+	}
+	.carousel-indicators .active{
+    background-color: #111;
+	}
+	.carousel-indicators li{
+    background-color: #585858;
+	}
+	.BodyRight1{
+		padding : 0 0 0 20px;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+	}
+	.BodyRight2{
+		width: 100%;
+	}
+	form{
+		width: 100%;
+	}
+	form .FormLogin{
+		margin: 0 0 0 10%;
+		padding : 10px 0 0 0;
+	}
+	form .Email, form .Password{
+		margin: 0 0 15px 12%;
+		width: 80%;
+		height: 30px;
+		color: #333;
+		background-color: #f5f5f5;
+		border: 1px solid #8f8f8f;
+		border-radius: .25rem;
+		transition: border .1s linear,background-color .1s linear;
+		display: inline-block;
+		padding: 0 1rem 0 .75rem;
+	}
+	form .FormCheckBox{
+		margin: 0 0 10px 12%;
+
+
+	}
+	form .LoginButton{
+	    width: 80%;
+		background: #ff5114;
+		color: #fff;
+		height: 54px;
+		border: 2px solid #ff5114;
+		border-radius: 30px;
+		padding: 10px;
+		margin: 0 0 5px 12%;
+	}
+	form .LoginButton:hover{
+		border: none;
+		transition: 0.5s;
+	}
+	.ForgotPass ul li{
+		display: inline-block;
+		margin: 0 0 0 5px;
+		font-size: 15px;
+	}
+	.ForgotPass a{
+		text-decoration: none;
+		color: #1e1e1e;
+	}
+	.ForgotPass a:hover{
+		color: #fb6f17;
+	}
+	.articles{
+		margin: 20px 0 0 0;
+		width: 100%;
+	}
+	.articles a{
+		color: #fff;
+	}
+	.articles a:hover{
+		color: #ff4400;
+	}
+	.articles8 a{
+		color: #fff;
+	}
+	.articles8 a:hover{
+		color: #ff4400;
+	}
+	.articles1{
+		background-image: url(https://meralcomain.s3.ap-southeast-1.amazonaws.com/images/product_service_program/2017-11/mobile-power-ideas-landing.jpg);
+		background-repeat: no-repeat;
+		background-size: 100% 300px;
+		width: 47%;
+		height: 250px;
+		float:left;
+		margin: 0 3% 0 0;
+	}
+	.articles1 .content1, .articles1 .content2,.articles1 .content3,.articles2 .content1,.articles2 .content2,.articles3 .content1, .articles3 .content2{
+		margin: 0 0 0 5%; 
+	}
+	.articles1 .content1{
+		margin-top: 35%;
+	}
+	.articles2{
+		background-image: url(https://meralcomain.s3.ap-southeast-1.amazonaws.com/default_images/video-thumb.jpg);
+		background-repeat: no-repeat;
+		background-size: 100% 300px;
+		float:left;
+		width: 47%;
+		height: 250px;
+		margin: 0 0 10px 3%;
+		
+	}
+	.articles2 .content1{
+		margin-top: 40%;
+	}
+	.articles8{
+		margin-top: 10px;
+	}
+	.articles3{
+		background-image: url(https://meralcomain.s3.ap-southeast-1.amazonaws.com/images/article/2019-06/dsc_0025_1_2.jpg?null);
+		float: left;
+		background-repeat: no-repeat;
+		background-size: 100% 300px;
+		width: 47%;
+		height: 250px;
+		margin: 0 0 0 28%;
+	}
+	.articles3 .content1{
+		margin-top: 40%;
+	}
+	.articles4{
+		background-image: url(https://meralcomain.s3.ap-southeast-1.amazonaws.com/images/basic_page/2017-10/maintenance-sched-banner_0.jpg);
+		float: left;
+		background-repeat: no-repeat;
+		background-size: 100% 300px;
+		width: 47%;
+		height: 250px;
+		margin: 0 0 0 3%;
+	}
+	.articles4 .Content1, .articles4 .Content2 ,.articles5 .Content1, .articles5 .Content2, .articles5 .Content3,.articles6 .Content1, .articles6 .Content2{
+		margin: 0 0 0 5%;
+	}
+	.articles4 .content1{
+		margin-top: 45%;
+	}
+	.articles5{
+		background-image: url(https://meralcomain.s3.ap-southeast-1.amazonaws.com/images/basic_page/2018-10/start-or-modify-thumb-v2.jpg);
+		float: left;
+		background-repeat: no-repeat;
+		background-size: 100% 300px;
+		width: 47%;
+		height: 250px;
+		margin: 0 0 10px 3%;
+	}
+	.articles5 .Content1{
+		margin-top: 30%;
+	}
+	.articles6{
+		background-image: url(https://meralcomain.s3.ap-southeast-1.amazonaws.com/images/article/2018-06/saffron-thumb.jpg);
+		float: left;
+		background-repeat: no-repeat;
+		background-size: 100% 300px;
+		width: 47%;
+		height: 250px;
+		margin: 0 0 0 28%;
+	}
+	.articles6 .Content1{
+		margin-top: 40%;
+	}
+	.footer{
+		width: 100%;
+		margin: 10px 0 0 0;
+		color: #fff;
+	}
+	.footer1{
+		width:35%;
+		height: 150px;
+		background-color: #000;
+		float:left;
+	}
+	.footer2{
+		width:35%;
+		height: 150px;
+		background-color: #000;
+		float:left;
+	}
+	.footer3{
+		width:30%;
+		height: 150px;
+		background-color: #000;
+		float:right;
+	}
+	.footer1 ul li{
+		display: block;
+		margin: 0 0 3% 0;
+	}
+	.footer1 ul{
+		margin: 10% 0 0 10%;
+	}
+	.footer2 ul li{
+		display: block;
+		margin: 5px 0 3% 0;
+
+	}
+	.footer2 ul{
+		margin: 3% 0 0 10%;
+	}
+	.footer a{
+		color: #fff;
+		text-decoration:none;
+	}
+	.footer a:hover{
+		color: #ff4400;
+	}
+	.footer3 img{
+		margin: 10% 0 0 50%;
+	}
+	.footer4 {
+		width: 100%;
+		background-color: #000;
+		border-top: 2px solid #444;
+		height: 100px;
+		padding : 10px 0 10px 0;
+	}
+	.footer4 ul li{
+		display: inline-block;
+		margin: 30px 10px 0 0;
+		font-size: 13px;
+	}
+	.footer4 ul{
+		display:flex;
+		justify-content:center;
+	}
+	h1, h3 ,h4{
+		font-family: Oswald;
+	}
+	li, input{
+		font-family: Quattrocento;
+	}
+            }
+	h1{
+		font-size: 25px;
+	}
+	h3{
+		font-size: 20px;
+	}
+	h2{
+		font-size: 20px;
+	}
+	h4{
+		font-size: 15px;
+	}
+	p{
+		font-size: 13px;
+	}
+    }
 	</style>
 </head>
 <body>
@@ -505,7 +1588,7 @@
 	<div style="clear:both">
 	</div>
 	<div class="container1">
-		<div class="articles">
+		<div class="articles8">
 			<a href="#">
 			<div class="articles4 overlay ">
 					<h4 class="Content1">Company</h4>

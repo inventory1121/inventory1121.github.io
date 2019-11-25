@@ -14,235 +14,976 @@
     <meta name="description" content="We would like to use your location and cookies to push outage notifications and Meralco-related advisories. Read our Privacy Policy. Ok ...">
     <meta name="keyword" content="Meralco,Meralco PH,Meralco Online">
 	<style type="text/css">
-	body{
-		margin: 0;
-		background-color:#ffffff;
-	}
-	header{
-		padding: 20px 0 20px 0;
-		width: 100%;
-		margin: 5px 0 0 0;
-	}
-	a{
-		text-decoration: none;
-	}
-	.container1{
-		width: 90%;
-		margin: 0 auto;
-	}
-	.container2{
-		width: 80%;
-		margin: 0 auto;
-	}
-	.header1 , .header2, .header3{
-		border-bottom: 5px solid;
-		border-color: #fb6f17;
-		background-color: #ffffff;
-		height: 120px;
+		@media screen and (min-width: 1280px){ 
+		body{
+			margin: 0;
+			background-color:#ffffff;
+		}
+		header{
+			padding: 20px 0 20px 0;
+			width: 100%;
+			margin: 5px 0 0 0;
+		}
+		a{
+			text-decoration: none;
+		}
+		.container1{
+			width: 90%;
+			margin: 0 auto;
+		}
+		.container2{
+			width: 80%;
+			margin: 0 auto;
+		}
+		.header1 , .header2, .header3{
+			border-bottom: 5px solid;
+			border-color: #fb6f17;
+			background-color: #ffffff;
+			height: 120px;
 
-	}
-	.header1, .header3{
-		width: 30%;	
-	}
-	.header1{
-		float: left;
-		border-top-left-radius: 5px;
-	}
-	.header2{
-		float: left;
-		width: 40%;
-	}
-	.header3{
-		float:right;
-		border-top-right-radius: 5px;
-	}
-	.Logo{
-		margin: 20px 0 0 150px;
-		height: 70%;
-		width: 20%;
-	}
-	.header2 ul li{
-		display:inline-block;
-		font-size: 25px;
-	}
-	.header2 li, .header3 li{
-		margin: 0 0 0 2%;
-	}
-	.header2 ul{
-		margin: 7% 0 0 5%;
-	}
-	.header2 a,.header3 a,nav a{
-		color: #1e1e1e;
-		font-family: oswald;
-	}
-	.header2 a:hover,.header3 a:hover, nav a:hover {
-		color: #fb6f17;
-		text-decoration: none;
-	}
-	.header3 ul li{
-		display:inline-block;
-		font-size: 20px;
-	}
-	.header3 ul{
-		margin: 8% 0 0 5%;
-	}
-	.header3 a{
-		font-size: 35px;
-	}
-	nav{
-		background-color: #ffffff;
-		width: 100%;
-		height: 60px;
-		padding: 5px 0 5px 0;
-		margin: 20px 0 0 0;
-	}
-	nav ul{
-		display: flex;
-		justify-content: center;
-	}
-	nav ul li{
-		display: inline-block;
-		font-size: 25px;
-		margin: 0 50px 0 0;
-	}
-	.ServiceBody{
-		background-color: #ffffff;
-		width: 100%;
-		height: 100px;
-		text-align: center;
-		border-bottom: 2px solid;
-		border-color: #fb6f17;
-	}
-	.ServiceBody1{
-		width: 100%;
-		height: 300px;
-		background-color: #ffffff;
-		margin: 30px 0 0 0;
-	}
-	.ServiceBody1 a,.ServiceBody2 a{
-		color: #1e1e1e;
-		text-decoration: none;
-		font-family: oswald;
-	}
-	.ServiceBody1 a:hover,.ServiceBody2 a:hover{
-		color: #fb6f17;
-	}
-	.Services1{
-		width: 33.33%;
-		float:left;
-		height: 150px;
-	}
-	.Services1 img {
-		margin: 20px 0 0 35%;
-	}
-	.Services2{
-		width: 33.33%;
-		float:left;
-		height: 100px;
-	}
-	.Services2 img {
-		margin: 20px 0 4% 30%;
-	}
-	.Services3{
-		width: 33.33%;
-		float:right;
-		height: 100px;
-	}
-	.Services3 img {
-		margin: 0 0 4% 30%;
-	}
-	.ServiceBody2{
-		width: 100%;
-		height: 300px;
-		background-color: #ffffff;
-		margin: 30px 0 0 0;
-	}
-	.Services4{
-		width: 33.33%;
-		float:left;
-		height: 150px;
-		margin-right: 1%;
-	}
-	.Services4 img {
-		margin: 20px 0 4% 30%;
-	}
-	.Services5{
-		width: 33.33%;
-		float:left;
-		height: 100px;
-	}
-	.Services5 img {
-		margin: 20px 0 4% 30%;
-	}
-	.footer{
-		width: 100%;
-		margin: 0 0 0 0;
-		color: #fff;
-	}
-	.footer1{
-		width:35%;
-		height: 150px;
-		background-color: #000;
-		float:left;
-	}
-	.footer2{
-		width:35%;
-		height: 150px;
-		background-color: #000;
-		float:left;
-	}
-	.footer3{
-		width:30%;
-		height: 150px;
-		background-color: #000;
-		float:right;
-	}
-	.footer1 ul li{
-		display: block;
-		margin: 0 0 3% 0;
-	}
-	.footer1 ul{
-		margin: 10% 0 0 10%;
-	}
-	.footer2 ul li{
-		display: block;
-		margin: 5px 0 3% 0;
+		}
+		.header1, .header3{
+			width: 30%;	
+		}
+		.header1{
+			float: left;
+			border-top-left-radius: 5px;
+		}
+		.header2{
+			float: left;
+			width: 40%;
+		}
+		.header3{
+			float:right;
+			border-top-right-radius: 5px;
+		}
+		.Logo{
+			margin: 20px 0 0 150px;
+			height: 70%;
+			width: 20%;
+		}
+		.header2 ul li{
+			display:inline-block;
+			font-size: 25px;
+		}
+		.header2 li, .header3 li{
+			margin: 0 0 0 2%;
+		}
+		.header2 ul{
+			margin: 7% 0 0 5%;
+		}
+		.header2 a,.header3 a,nav a{
+			color: #1e1e1e;
+			font-family: oswald;
+		}
+		.header2 a:hover,.header3 a:hover, nav a:hover {
+			color: #fb6f17;
+			text-decoration: none;
+		}
+		.header3 ul li{
+			display:inline-block;
+			font-size: 20px;
+		}
+		.header3 ul{
+			margin: 8% 0 0 5%;
+		}
+		.header3 a{
+			font-size: 35px;
+		}
+		nav{
+			background-color: #ffffff;
+			width: 100%;
+			height: 60px;
+			padding: 5px 0 5px 0;
+			margin: 20px 0 0 0;
+		}
+		nav ul{
+			display: flex;
+			justify-content: center;
+		}
+		nav ul li{
+			display: inline-block;
+			font-size: 25px;
+			margin: 0 50px 0 0;
+		}
+		.ServiceBody{
+			background-color: #ffffff;
+			width: 100%;
+			height: 100px;
+			text-align: center;
+			border-bottom: 2px solid;
+			border-color: #fb6f17;
+		}
+		.ServiceBody1{
+			width: 100%;
+			height: 300px;
+			background-color: #ffffff;
+			margin: 30px 0 0 0;
+		}
+		.ServiceBody1 a,.ServiceBody2 a{
+			color: #1e1e1e;
+			text-decoration: none;
+			font-family: oswald;
+		}
+		.ServiceBody1 a:hover,.ServiceBody2 a:hover{
+			color: #fb6f17;
+		}
+		.Services1{
+			width: 33.33%;
+			float:left;
+			height: 150px;
+		}
+		.Services1 img {
+			margin: 20px 0 0 35%;
+		}
+		.Services2{
+			width: 33.33%;
+			float:left;
+			height: 100px;
+		}
+		.Services2 img {
+			margin: 20px 0 4% 30%;
+		}
+		.Services3{
+			width: 33.33%;
+			float:right;
+			height: 100px;
+		}
+		.Services3 img {
+			margin: 0 0 4% 30%;
+		}
+		.ServiceBody2{
+			width: 100%;
+			height: 300px;
+			background-color: #ffffff;
+			margin: 30px 0 0 0;
+		}
+		.Services4{
+			width: 33.33%;
+			float:left;
+			height: 150px;
+			margin-right: 1%;
+		}
+		.Services4 img {
+			margin: 20px 0 4% 30%;
+		}
+		.Services5{
+			width: 33.33%;
+			float:left;
+			height: 100px;
+		}
+		.Services5 img {
+			margin: 20px 0 4% 30%;
+		}
+		.footer{
+			width: 100%;
+			margin: 0 0 0 0;
+			color: #fff;
+		}
+		.footer1{
+			width:35%;
+			height: 150px;
+			background-color: #000;
+			float:left;
+		}
+		.footer2{
+			width:35%;
+			height: 150px;
+			background-color: #000;
+			float:left;
+		}
+		.footer3{
+			width:30%;
+			height: 150px;
+			background-color: #000;
+			float:right;
+		}
+		.footer1 ul li{
+			display: block;
+			margin: 0 0 3% 0;
+		}
+		.footer1 ul{
+			margin: 10% 0 0 10%;
+		}
+		.footer2 ul li{
+			display: block;
+			margin: 5px 0 3% 0;
 
-	}
-	.footer2 ul{
-		margin: 3% 0 0 10%;
-	}
-	.footer a{
-		color: #fff;
-		text-decoration:none;
-	}
-	.footer a:hover{
-		color: #ff4400;
-	}
-	.footer3 img{
-		margin: 10% 0 0 75%;
-	}
-	.footer4 {
-		width: 100%;
-		background-color: #000;
-		border-top: 2px solid #444;
-		height: 60px;
-		padding : 10px 0 10px 0;
-	}
-	.footer4 ul li{
-		display: inline-block;
-		margin: 5px 30px 0 0;
-	}
-	.footer4 ul{
-		display:flex;
-		justify-content:center;
-	}
-	h1, h2, h3, h4{
-		font-family: oswald;
-	}
-	p, li{
-		font-family: Quattrocento;
-	}
+		}
+		.footer2 ul{
+			margin: 3% 0 0 10%;
+		}
+		.footer a{
+			color: #fff;
+			text-decoration:none;
+		}
+		.footer a:hover{
+			color: #ff4400;
+		}
+		.footer3 img{
+			margin: 10% 0 0 75%;
+		}
+		.footer4 {
+			width: 100%;
+			background-color: #000;
+			border-top: 2px solid #444;
+			height: 60px;
+			padding : 10px 0 10px 0;
+		}
+		.footer4 ul li{
+			display: inline-block;
+			margin: 5px 30px 0 0;
+		}
+		.footer4 ul{
+			display:flex;
+			justify-content:center;
+		}
+		h1, h2, h3, h4{
+			font-family: oswald;
+		}
+		p, li{
+			font-family: Quattrocento;
+		}
+     }
+
+	 @media screen and (max-width: 1279px) and (min-width: 769px)  { 
+		body{
+			margin: 0;
+			background-color:#ffffff;
+		}
+		header{
+			padding: 20px 0 20px 0;
+			width: 100%;
+			margin: 5px 0 0 0;
+		}
+		a{
+			text-decoration: none;
+		}
+		.container1{
+			width: 90%;
+			margin: 0 auto;
+		}
+		.container2{
+			width: 80%;
+			margin: 0 auto;
+		}
+		.header1 , .header2, .header3{
+			border-bottom: 5px solid;
+			border-color: #fb6f17;
+			background-color: #ffffff;
+			height: 120px;
+
+		}
+		.header1, .header3{
+			width: 30%;	
+		}
+		.header1{
+			float: left;
+			border-top-left-radius: 5px;
+		}
+		.header2{
+			float: left;
+			width: 40%;
+		}
+		.header3{
+			float:right;
+			border-top-right-radius: 5px;
+		}
+		.Logo{
+			margin: 20px 0 0 150px;
+			height: 70%;
+			width: 20%;
+		}
+		.header2 ul li{
+			display:inline-block;
+			font-size: 25px;
+		}
+		.header2 li, .header3 li{
+			margin: 0 0 0 2%;
+		}
+		.header2 ul{
+			margin: 7% 0 0 5%;
+		}
+		.header2 a,.header3 a,nav a{
+			color: #1e1e1e;
+			font-family: oswald;
+		}
+		.header2 a:hover,.header3 a:hover, nav a:hover {
+			color: #fb6f17;
+			text-decoration: none;
+		}
+		.header3 ul li{
+			display:inline-block;
+			font-size: 20px;
+		}
+		.header3 ul{
+			margin: 8% 0 0 5%;
+		}
+		.header3 a{
+			font-size: 35px;
+		}
+		nav{
+			background-color: #ffffff;
+			width: 100%;
+			height: 60px;
+			padding: 5px 0 5px 0;
+			margin: 20px 0 0 0;
+		}
+		nav ul{
+			display: flex;
+			justify-content: center;
+		}
+		nav ul li{
+			display: inline-block;
+			font-size: 25px;
+			margin: 0 50px 0 0;
+		}
+		.ServiceBody{
+			background-color: #ffffff;
+			width: 100%;
+			height: 100px;
+			text-align: center;
+			border-bottom: 2px solid;
+			border-color: #fb6f17;
+		}
+		.ServiceBody1{
+			width: 100%;
+			height: 300px;
+			background-color: #ffffff;
+			margin: 30px 0 0 0;
+		}
+		.ServiceBody1 a,.ServiceBody2 a{
+			color: #1e1e1e;
+			text-decoration: none;
+			font-family: oswald;
+		}
+		.ServiceBody1 a:hover,.ServiceBody2 a:hover{
+			color: #fb6f17;
+		}
+		.Services1{
+			width: 30%;
+			float:left;
+			height: 150px;
+			height: 100px;
+			margin-right: 3%;
+		}
+		.Services1 img {
+			margin: 20px 0 0 35%;
+		}
+		.Services2{
+			width: 30%;
+			float:left;
+			height: 100px;
+			margin-right: 3%;
+		}
+		.Services2 img {
+			margin: 20px 0 4% 30%;
+		}
+		.Services3{
+			width: 30%;
+			float:right;
+			height: 100px;
+		}
+		.Services3 img {
+			margin: 0 0 4% 30%;
+		}
+		.ServiceBody2{
+			width: 100%;
+			height: 300px;
+			background-color: #ffffff;
+			margin: 30px 0 0 0;
+		}
+		.Services4{
+			width: 33.33%;
+			float:left;
+			height: 150px;
+			margin-right: 1%;
+		}
+		.Services4 img {
+			margin: 20px 0 4% 30%;
+		}
+		.Services5{
+			width: 33.33%;
+			float:left;
+			height: 100px;
+		}
+		.Services5 img {
+			margin: 20px 0 4% 30%;
+		}
+		.footer{
+			width: 100%;
+			margin: 0 0 0 0;
+			color: #fff;
+		}
+		.footer1{
+			width:35%;
+			height: 150px;
+			background-color: #000;
+			float:left;
+		}
+		.footer2{
+			width:35%;
+			height: 150px;
+			background-color: #000;
+			float:left;
+		}
+		.footer3{
+			width:30%;
+			height: 150px;
+			background-color: #000;
+			float:right;
+		}
+		.footer1 ul li{
+			display: block;
+			margin: 0 0 3% 0;
+		}
+		.footer1 ul{
+			margin: 10% 0 0 10%;
+		}
+		.footer2 ul li{
+			display: block;
+			margin: 5px 0 3% 0;
+
+		}
+		.footer2 ul{
+			margin: 3% 0 0 10%;
+		}
+		.footer a{
+			color: #fff;
+			text-decoration:none;
+		}
+		.footer a:hover{
+			color: #ff4400;
+		}
+		.footer3 img{
+			margin: 10% 0 0 75%;
+		}
+		.footer4 {
+			width: 100%;
+			background-color: #000;
+			border-top: 2px solid #444;
+			height: 60px;
+			padding : 10px 0 10px 0;
+		}
+		.footer4 ul li{
+			display: inline-block;
+			margin: 5px 30px 0 0;
+		}
+		.footer4 ul{
+			display:flex;
+			justify-content:center;
+		}
+		h1, h2, h3, h4{
+			font-family: oswald;
+		}
+		p, li{
+			font-family: Quattrocento;
+		}
+     }
+		@media screen and (max-width: 768px) and (min-width: 481px)  { 
+		body{
+			margin: 0;
+			background-color:#ffffff;
+		}
+		header{
+			padding: 20px 0 20px 0;
+			width: 100%;
+			margin: 5px 0 0 0;
+		}
+		a{
+			text-decoration: none;
+		}
+		.container1{
+			width: 90%;
+			margin: 0 auto;
+		}
+		.container2{
+			width: 80%;
+			margin: 0 auto;
+		}
+		.header1 , .header2, .header3{
+			border-bottom: 5px solid;
+			border-color: #fb6f17;
+			background-color: #ffffff;
+			height: 120px;
+
+		}
+		.header1{
+			width: 20%;	
+		}
+		.header3{
+			width: 30%;	
+		}
+		.header1{
+			float: left;
+			border-top-left-radius: 5px;
+		}
+		.header2{
+			float: left;
+			width: 50%;
+		}
+		.header3{
+			float:right;
+			border-top-right-radius: 5px;
+		}
+		.Logo{
+			margin: 20px 0 0 40%;
+			height: 70%;
+			width: 50%;
+		}
+		.header2 ul li{
+			display:inline-block;
+			font-size: 20px;
+		}
+		.header2 li, .header3 li{
+			margin: 0 0 0 2%;
+		}
+		.header2 ul{
+			margin: 10% 0 0 5%;
+		}
+		.header2 a,.header3 a,nav a{
+			color: #1e1e1e;
+			font-family: oswald;
+		}
+		.header2 a:hover,.header3 a:hover, nav a:hover {
+			color: #fb6f17;
+			text-decoration: none;
+		}
+		.header3 ul li{
+			display:inline-block;
+			font-size: 30px;
+		}
+		.header3 ul{
+			margin: 0 0 0 5%;
+		}
+		.header3 a{
+			font-size: 35px;
+		}
+		nav{
+			background-color: #ffffff;
+			width: 100%;
+			height: 60px;
+			padding: 5px 0 5px 0;
+			margin: 20px 0 0 0;
+		}
+		nav ul{
+			display: flex;
+			justify-content: center;
+		}
+		nav ul li{
+			display: inline-block;
+			font-size: 20px;
+			margin: 0 15px 0 0;
+		}
+		.ServiceBody{
+			background-color: #ffffff;
+			width: 100%;
+			height: 100px;
+			text-align: center;
+			border-bottom: 2px solid;
+			border-color: #fb6f17;
+		}
+		.ServiceBody1{
+			width: 100%;
+			height: 300px;
+			background-color: #ffffff;
+			margin: 30px 0 0 0;
+		}
+		.ServiceBody1 a,.ServiceBody2 a{
+			color: #1e1e1e;
+			text-decoration: none;
+			font-family: oswald;
+		}
+		.ServiceBody1 a:hover,.ServiceBody2 a:hover{
+			color: #fb6f17;
+		}
+		.Services1{
+			width: 33.33%;
+			float:left;
+			height: 150px;
+		}
+		.Services1 img {
+			margin: 20px 0 0 35%;
+		}
+		.Services2{
+			width: 33.33%;
+			float:left;
+			height: 100px;
+		}
+		.Services2 img {
+			margin: 20px 0 4% 30%;
+		}
+		.Services3{
+			width: 33.33%;
+			float:right;
+			height: 100px;
+		}
+		.Services3 img {
+			margin: 0 0 4% 30%;
+		}
+		.ServiceBody2{
+			width: 100%;
+			height: 300px;
+			background-color: #ffffff;
+			margin: 30px 0 0 0;
+		}
+		.Services4{
+			width: 33.33%;
+			float:left;
+			height: 150px;
+			margin-right: 1%;
+		}
+		.Services4 img {
+			margin: 20px 0 4% 30%;
+		}
+		.Services5{
+			width: 33.33%;
+			float:left;
+			height: 100px;
+		}
+		.Services5 img {
+			margin: 20px 0 4% 30%;
+		}
+		.footer{
+			width: 100%;
+			margin: 0 0 0 0;
+			color: #fff;
+		}
+		.footer1{
+			width:35%;
+			height: 150px;
+			background-color: #000;
+			float:left;
+		}
+		.footer2{
+			width:35%;
+			height: 150px;
+			background-color: #000;
+			float:left;
+		}
+		.footer3{
+			width:30%;
+			height: 150px;
+			background-color: #000;
+			float:right;
+		}
+		.footer1 ul li{
+			display: block;
+			margin: 0 0 3% 0;
+		}
+		.footer1 ul{
+			margin: 10% 0 0 10%;
+		}
+		.footer2 ul li{
+			display: block;
+			margin: 5px 0 3% 0;
+
+		}
+		.footer2 ul{
+			margin: 3% 0 0 10%;
+		}
+		.footer a{
+			color: #fff;
+			text-decoration:none;
+		}
+		.footer a:hover{
+			color: #ff4400;
+		}
+		.footer3 img{
+			margin: 10% 0 0 50%;
+		}
+		.footer4 {
+			width: 100%;
+			background-color: #000;
+			border-top: 2px solid #444;
+			height: 100px;
+			padding : 10px 0 10px 0;
+		}
+		.footer4 ul li{
+			display: inline-block;
+			margin: 30px 10px 0 0;
+			font-size: 13px;
+		}
+		.footer4 ul{
+			display:flex;
+			justify-content:center;
+		}
+		h1, h2, h3, h4{
+			font-family: oswald;
+		}
+		p, li{
+			font-family: Quattrocento;
+		}
+		h1{
+			font-size: 25px;
+		}
+		p{
+			font-size: 15px;
+		}
+		h3{
+			font-size: 20px;
+		}
+     }
+	 	@media screen and (max-width: 480px){
+			body{
+			margin: 0;
+			background-color:#ffffff;
+		}
+		header{
+			padding: 20px 0 20px 0;
+			width: 100%;
+			margin: 5px 0 0 0;
+		}
+		a{
+			text-decoration: none;
+		}
+		.container1{
+			width: 90%;
+			margin: 0 auto;
+		}
+		.container2{
+			width: 80%;
+			margin: 0 auto;
+		}
+		.header1 , .header2, .header3{
+			border-bottom: 5px solid;
+			border-color: #fb6f17;
+			background-color: #ffffff;
+			height: 120px;
+
+		}
+		.header1 {
+			width: 20%;	
+		}
+
+		.header1{
+			float: left;
+			border-top-left-radius: 5px;
+		}
+		.header2{
+			float: left;
+			width: 55%;
+		}
+		.header3{
+			float:right;
+			border-top-right-radius: 5px;
+			width: 25%;
+		}
+		.Logo{
+			margin: 20px 0 0 30%;
+			height: 60%;
+			width: 70%;
+		}
+		.header2 ul li{
+			display:inline-block;
+			font-size: 15px;
+		}
+		.header2 li, .header3 li{
+			margin: 0 0 0 2px;
+		}
+		.header2 ul{
+			margin: 15% 0 0 0;
+		}
+		.header2 a,.header3 a,nav a{
+			color: #1e1e1e;
+			font-family: oswald;
+		}
+		.header2 a:hover,.header3 a:hover, nav a:hover {
+			color: #fb6f17;
+			text-decoration: none;
+		}
+		.header3 ul li{
+			display:inline-block;
+			font-size: 14px;
+		}
+		.header3 ul{
+			margin: 15% 0 0 0;
+		}
+		.header3 a{
+			font-size: 20px;
+			margin: 0 0 0 50%;
+		}
+		nav{
+			background-color: #ffffff;
+			width: 100%;
+			height: 60px;
+			padding: 5px 0 0 0;
+			margin: 10px 0 0 0;
+		}
+		nav ul{
+			display: flex;
+			justify-content: center;
+		}
+		nav ul li{
+			display: inline-block;
+			font-size: 11px;
+			margin: 0 15px 0 0;
+		}
+		.ServiceBody{
+			background-color: #ffffff;
+			width: 100%;
+			height: 100px;
+			text-align: center;
+			border-bottom: 2px solid;
+			border-color: #fb6f17;
+		}
+		.ServiceBody1{
+			width: 100%;
+			height: 300px;
+			background-color: #ffffff;
+			margin: 30px 0 0 0;
+		}
+		.ServiceBody1 a,.ServiceBody2 a{
+			color: #1e1e1e;
+			text-decoration: none;
+			font-family: oswald;
+		}
+		.ServiceBody1 a:hover,.ServiceBody2 a:hover{
+			color: #fb6f17;
+		}
+		.Services1{
+			width: 100%;
+			float:left;
+			height: 200px;
+			margin-bottom: 10px;
+		}
+		.Services1 img {
+			margin: 20px 0 0 35%;
+		}
+		.Services2{
+			width:100%;
+			float:left;
+			height: 200px;
+			margin-bottom: 10px;
+		}
+		.Services2 img {
+			margin: 0 0 0 35%;
+		}
+		.Services3{
+			width: 100%;
+			float:right;
+			height: 200px;
+			margin-bottom: 10px;
+		}
+		.Services3 img {
+			margin: 0 0 4% 35%;
+		}
+		.ServiceBody2{
+			width: 100%;
+			height: 100px;
+			background-color: #ffffff;
+			margin: 30px 0 0 0;
+		}
+		.Services4{
+			width: 100%;
+			float:left;
+			height: 200px;
+			margin-right: 1%;
+		}
+		.Services4 img {
+			margin:  0 0 4% 35%;
+		}
+		.Services5{
+			width: 100%;
+			float:left;
+			height: 200px;
+			margin:  0 0 31% 0;
+		}
+		.Services5 img {
+			margin: 0 0 4% 35%;
+		}
+		.footer{
+			width: 100%;
+			margin: 0 0 0 0;
+			color: #fff;
+			
+		}
+		.footer1{
+			width:35%;
+			height: 150px;
+			background-color: #000;
+			float:left;
+		}
+		.footer2{
+			width:35%;
+			height: 150px;
+			background-color: #000;
+			float:left;
+		}
+		.footer3{
+			width:30%;
+			height: 150px;
+			background-color: #000;
+			float:right;
+		}
+		.footer1 ul li{
+			display: block;
+			margin: 0 0 3% 0;
+			font-size: 13px;
+		}
+		.footer1 ul{
+			margin: 10% 0 0 10%;
+		}
+		.footer2 ul li{
+			display: block;
+			margin: 5px 0 3% 0;
+			font-size: 13px;
+
+		}
+		.footer2 ul{
+			margin: 3% 0 0 5%;
+			font-size: 10px;
+		}
+		.footer a{
+			color: #fff;
+			text-decoration:none;
+		}
+		.footer a:hover{
+			color: #ff4400;
+		}
+		.footer3 img{
+			margin: 10% 0 0 35%;
+		}
+		.footer4 {
+			width: 100%;
+			background-color: #000;
+			border-top: 2px solid #444;
+			height: 60px;
+			padding : 10px 0 10px 0;
+		}
+		.footer4 ul li{
+			display: inline-block;
+			margin: 15px 10px 0 0;
+			font-size : 8px;
+		}
+		.footer4 ul{
+			display:flex;
+			justify-content:center;
+		}
+		h1, h2, h3, h4{
+			font-family: oswald;
+		}
+		p, li{
+			font-family: Quattrocento;
+		}
+		h1{
+		font-size: 25px;
+		}
+		h3{
+			font-size: 18px;
+		}
+		h2{
+			font-size: 20px;
+		}
+		h4{
+			font-size: 15px;
+		}
+		p{
+			font-size: 13px;
+		}
+            }
+
+
 	</style>
 </head>
 <body>
